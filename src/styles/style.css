@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    
+ 
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+body {
+    height: 100%;
+    line-height: 2.2;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #0E0E0F;
+    background-size: cover;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    max-width: 500px;
+    transform: translate(-260px);
+  }
+
+.nav-link {
+    margin-right: 15px;
+    font-size: 14px;
+    color: rgb(233, 231, 231) !important;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    padding-bottom: 0;
+    padding-left: 20%;
+    backdrop-filter: blur(15px);
+}
+
+.nav-active {
+    background-color:rgba(51, 50, 77, 0.39);
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.nav-active::before {
+    
+}
+
+
+.navbar-brand {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white !important;
+}
+
+p {
+    color: black;
+}
+
+/* Home Begin */
+.home {
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/assets/images/canyonPurple.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+  }
+
+.home h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 4.5rem;
+    margin: 0 0 25px;
+    line-height: 1;
+    color: rgba(255, 255, 255);
+}
+
+.home p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#hide1, #hide2, #hide3{
+    display: inline-block;
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.4s, opacity 0.4s;
+  }
+  
+#zk-trigger:hover #hide1, #zk-trigger:hover #hide3{
+    max-width: 100px;
+    opacity: 1;
+    transition: max-width 0.4s, opacity 0.4s;
+}
+
+#zk-trigger:hover #hide2 {
+    max-width: 200px;
+    opacity: 1;
+    transition: max-width 0.4s, opacity 0.4s;
+}
+
+.expertlyCrafted {
+
+    width: 817px;
+    text-align: center; 
+    color: white; 
+    font-size: 64px; 
+    font-style: normal;
+    font-family: Inter; 
+    font-weight: 500; 
+    line-height: 70.40px; /* 110% */
+    word-wrap: break-word;
+    background: radial-gradient(100% 45% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.35) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 1%;
+}
+
+.weAssist {
+    width: 564px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.32px; /* 159.429% */
+    padding-bottom: 2%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+.button {
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #ED3111;
+}
+
+.learn-more {
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #0E0E0F;    
+}
