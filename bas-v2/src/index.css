@@ -1,12 +1,10 @@
+/*this is what we started with */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
-@import-normalize;
 
 
-:root {
-    
- 
-}
+
+
 
 *,
 *::before,
@@ -100,7 +98,7 @@ section::after {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/assets/images/canyonPurple.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/bas-v2/src/assets/images/canyonPurple.jpg");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -220,13 +218,13 @@ section::after {
 }
 
 .terraform {
-    aspect-ratio: 1.80;
+    aspect-ratio: 1.60;
     object-fit: scale-down;
     object-position: center;
-    width: 75%;
+    width: 65%;
     box-shadow: 0 0 200px 75px rgba(177, 153, 255, 0.04);
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: -150px;
   }
 
   @media (max-width: 991px) {
@@ -235,6 +233,18 @@ section::after {
       margin-top: 40px;
     }
   }
+
+.section-2 {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/bas-v2/src/assets/images/macDark.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 
 .frame {
 display: flex;
