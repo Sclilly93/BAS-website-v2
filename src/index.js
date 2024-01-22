@@ -1,5 +1,10 @@
 // src/index.js project settings in the Firebase Console
 import { initializeApp } from 'firebase/app';
+import React from "react";
+
+
+
+
 
 
 const firebaseConfig = {
@@ -16,3 +21,11 @@ const app = initializeApp(firebaseConfig);
 
 
 firebase.initializeApp(firebaseConfig);
+
+
+
+//react entry point
+module.exports = {
+  // ... other configurations
+  entry: './src/index.js', 
+};

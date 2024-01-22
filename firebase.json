@@ -1,9 +1,9 @@
 {
   "functions": {
-    "source": "dist"
+    "source": "public"
   },
   "hosting": {
-    "public": "(src)",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
